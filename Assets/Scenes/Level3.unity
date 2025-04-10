@@ -239,13 +239,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 90845105}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!114 &330585547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -588,7 +588,7 @@ GameObject:
   - component: {fileID: 723633773}
   - component: {fileID: 723633772}
   - component: {fileID: 723633771}
-  - component: {fileID: 723633770}
+  - component: {fileID: 723633776}
   m_Layer: 0
   m_Name: Laser Gun (3)
   m_TagString: Untagged
@@ -596,25 +596,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &723633770
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 723633769}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c22663a8870514c79a234a089d9b012b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rayDistance: 100
-  controllerLayer:
-    serializedVersion: 2
-    m_Bits: 64
-  damageAmount: 10
-  showDebugInfo: 1
-  hitCooldown: 0.5
 --- !u!120 &723633771
 LineRenderer:
   serializedVersion: 2
@@ -746,9 +727,9 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -820,6 +801,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -3, y: -2, z: 0}
+--- !u!114 &723633776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 723633769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edf0452321a204714aa3729dd78f2b29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controllerLayer:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1 &773190229
 GameObject:
   m_ObjectHideFlags: 0
@@ -833,7 +829,7 @@ GameObject:
   - component: {fileID: 773190233}
   - component: {fileID: 773190232}
   - component: {fileID: 773190231}
-  - component: {fileID: 773190230}
+  - component: {fileID: 773190236}
   m_Layer: 0
   m_Name: Laser Gun
   m_TagString: Untagged
@@ -841,25 +837,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &773190230
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 773190229}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c22663a8870514c79a234a089d9b012b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rayDistance: 100
-  controllerLayer:
-    serializedVersion: 2
-    m_Bits: 64
-  damageAmount: 10
-  showDebugInfo: 1
-  hitCooldown: 0.5
 --- !u!120 &773190231
 LineRenderer:
   serializedVersion: 2
@@ -991,9 +968,9 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -1065,6 +1042,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 1, y: 0, z: 0}
+--- !u!114 &773190236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 773190229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edf0452321a204714aa3729dd78f2b29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controllerLayer:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1 &940793352
 GameObject:
   m_ObjectHideFlags: 0
@@ -1078,7 +1070,7 @@ GameObject:
   - component: {fileID: 940793356}
   - component: {fileID: 940793355}
   - component: {fileID: 940793354}
-  - component: {fileID: 940793353}
+  - component: {fileID: 940793359}
   m_Layer: 0
   m_Name: Laser Gun (2)
   m_TagString: Untagged
@@ -1086,25 +1078,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &940793353
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 940793352}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c22663a8870514c79a234a089d9b012b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rayDistance: 100
-  controllerLayer:
-    serializedVersion: 2
-    m_Bits: 64
-  damageAmount: 10
-  showDebugInfo: 1
-  hitCooldown: 0.5
 --- !u!120 &940793354
 LineRenderer:
   serializedVersion: 2
@@ -1236,9 +1209,9 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -1310,6 +1283,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &940793359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 940793352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edf0452321a204714aa3729dd78f2b29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controllerLayer:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1 &1202020524
 GameObject:
   m_ObjectHideFlags: 0
@@ -1353,7 +1341,7 @@ Transform:
   m_GameObject: {fileID: 1202020524}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.509, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1375,7 +1363,7 @@ GameObject:
   - component: {fileID: 1375737372}
   - component: {fileID: 1375737371}
   - component: {fileID: 1375737370}
-  - component: {fileID: 1375737369}
+  - component: {fileID: 1375737375}
   m_Layer: 0
   m_Name: Laser Gun (1)
   m_TagString: Untagged
@@ -1383,25 +1371,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1375737369
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1375737368}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c22663a8870514c79a234a089d9b012b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rayDistance: 100
-  controllerLayer:
-    serializedVersion: 2
-    m_Bits: 64
-  damageAmount: 10
-  showDebugInfo: 1
-  hitCooldown: 0.5
 --- !u!120 &1375737370
 LineRenderer:
   serializedVersion: 2
@@ -1533,9 +1502,9 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -1607,6 +1576,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -3, z: 0}
+--- !u!114 &1375737375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1375737368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edf0452321a204714aa3729dd78f2b29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controllerLayer:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1 &1693625337
 GameObject:
   m_ObjectHideFlags: 0
@@ -1655,7 +1639,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1693625337}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -1729,7 +1713,7 @@ GameObject:
   - component: {fileID: 1821586796}
   - component: {fileID: 1821586795}
   - component: {fileID: 1821586794}
-  - component: {fileID: 1821586793}
+  - component: {fileID: 1821586799}
   m_Layer: 0
   m_Name: Laser Gun (4)
   m_TagString: Untagged
@@ -1737,25 +1721,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1821586793
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1821586792}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c22663a8870514c79a234a089d9b012b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rayDistance: 100
-  controllerLayer:
-    serializedVersion: 2
-    m_Bits: 64
-  damageAmount: 10
-  showDebugInfo: 1
-  hitCooldown: 0.5
 --- !u!120 &1821586794
 LineRenderer:
   serializedVersion: 2
@@ -1887,9 +1852,9 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -1961,6 +1926,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 1, y: 5, z: 0}
+--- !u!114 &1821586799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1821586792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edf0452321a204714aa3729dd78f2b29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controllerLayer:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1 &1949757831
 GameObject:
   m_ObjectHideFlags: 0
@@ -2101,7 +2081,7 @@ GameObject:
   - component: {fileID: 1964602098}
   - component: {fileID: 1964602101}
   m_Layer: 0
-  m_Name: Text (TMP)
+  m_Name: ScoreText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2127,7 +2107,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Good
+  m_text: Level 3
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2254,7 +2234,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1964602097}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -0.3}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2272,7 +2252,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1964602097}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8b9d91d1c3c4a41f4a450ffcdfb8f0c5, type: 3}
   m_Name: 
@@ -2290,6 +2270,7 @@ GameObject:
   - component: {fileID: 1984269590}
   - component: {fileID: 1984269589}
   - component: {fileID: 1984269593}
+  - component: {fileID: 1984269594}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -2312,7 +2293,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -2380,7 +2361,7 @@ Transform:
   m_GameObject: {fileID: 1984269588}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.934, y: 0, z: 0.23691298}
+  m_LocalPosition: {x: 3.934, y: 0.056, z: 0.23691298}
   m_LocalScale: {x: 1, y: 0.1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2413,6 +2394,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1984269594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1984269588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35471f3c4c2db4762bd8caaaa59a25be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level: Finish
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
